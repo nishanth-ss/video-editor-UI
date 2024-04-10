@@ -1,0 +1,85 @@
+$primary: #34495e;
+$secondary: #ecf0f1;
+
+.dashboard-container {
+    .search-bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+
+        .MuiTextField-root {
+            width: 100%;
+        }
+    }
+
+    .img {
+        width: 50px;
+    }
+
+    // btn-container
+    .btn-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 1rem 0;
+
+        button {
+            text-transform: capitalize;
+        }
+    }
+
+    .btn-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .btn {
+        background-color: $primary;
+        color: $secondary;
+        border: 1px solid $primary;
+        display: flex;
+        gap: 5px;
+    }
+
+    .btn:hover {
+        background-color: $secondary;
+        color: $primary;
+        border: 1px solid $primary;
+    }
+
+    .btn-all-videos {
+        display: flex;
+        gap: 5px;
+        text-decoration: underline;
+    }
+
+    // videos-container
+    .videos-container {
+        h1 {
+            font-size: 1.2rem;
+        }
+
+        .videos-wrapper {
+            display: flex;
+            gap: 15px;
+            flex-direction: row;
+            justify-content: space-between;
+            height: 500px;
+            overflow-y: scroll;
+            flex-wrap: wrap;
+            .video-control{
+                width: 30%;
+            }
+            video {
+                width: 100%;
+            }
+
+            h6 {
+                font-size: 1rem;
+                margin-top: 10px;
+            }
+        }
+    }
+}
